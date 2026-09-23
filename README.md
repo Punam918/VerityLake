@@ -29,9 +29,6 @@ Python / Airflow / DuckDB / Delta Lake / S3 / Chroma / Ollama / FastAPI
   </tr>
 </table>
 
-![VerityLake live FastAPI OpenAPI documentation](docs/images/veritylake-api-docs.png)
-
-<p align="center"><sub>The running FastAPI service exposes liveness, readiness, governed catalog and authenticated query contracts.</sub></p>
 
 | Live check | Verified result |
 |---|---|
