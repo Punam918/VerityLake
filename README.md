@@ -260,9 +260,10 @@ docker compose down
 `GET /ask?question=...&top_k=4` and `POST /ask` both return `answer` and `sources`, plus status, release ID, and model names. Prefer POST: GET questions can appear in browser history or upstream proxy logs.
 
 ```bash
-# Replace the placeholder with your locally generated key. Do not commit this command with a real key.
+# Load the locally generated key without placing it in shell history or source control.
+export API_KEY="$(sed -n 's/^API_KEY=//p' .env)"
 curl --fail-with-body http://localhost:8000/ask \
-  -H 'X-API-Key: REPLACE_WITH_YOUR_LOCAL_API_KEY' \
+  -H "X-API-Key: ${API_KEY}" \
   -H 'Content-Type: application/json' \
   -d '{"question":"What is the listed price of A Light in the Attic?","top_k":4}'
 ```
