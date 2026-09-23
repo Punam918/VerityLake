@@ -397,12 +397,6 @@ docs/                Architecture, decisions, security, operations, evaluation a
 reports/             Actual packaging-time test evidence and explicit validation limitations
 ```
 
-## Deliberate limits and future work
-
-This is a serious **single-host engineering portfolio**, not an HA multi-tenant product. Before production: replace local authentication with an identity-aware gateway, enforce network-level egress and tenant isolation, use a maintained storage service, harden dependency/action pinning, validate backups and upgrades on real infrastructure, run representative answer-quality evaluations, and measure operational SLOs. Add reference-aware garbage collection rather than deleting old Delta/vector releases independently. Broader source adapters, streaming, hybrid retrieval/reranking and horizontally scalable serving follow evidence of need, not a checklist of fashionable tools.
-
-The project is suitable for demonstrating AI-platform, data-platform, DataOps/MLOps and DevOps engineering judgment. Its strongest hiring signal is a reproducible demonstration of failures, recovery and evidence-aware release controls.
-
 ## License
 
 Original repository code: [MIT](LICENSE). Dependencies, upstream storage source, downloaded models and crawled content retain their own licenses and terms. No scraped corpus, model weights, private credentials, or fabricated live results are distributed here.
