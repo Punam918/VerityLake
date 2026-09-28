@@ -397,6 +397,3 @@ docs/                Architecture, decisions, security, operations, evaluation a
 reports/             Actual packaging-time test evidence and explicit validation limitations
 ```
 
-## License
-
-Original repository code: [MIT](LICENSE). Dependencies, upstream storage source, downloaded models and crawled content retain their own licenses and terms. No scraped corpus, model weights, private credentials, or fabricated live results are distributed here.
