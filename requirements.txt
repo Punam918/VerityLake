@@ -4,7 +4,7 @@ boto3==1.42.70
 chromadb==1.5.9
 deltalake==1.6.3
 duckdb==1.5.5
-fastapi==0.129.2
+fastapi==0.141.1
 httpx==0.28.1
 prometheus-client==0.25.0
 pyarrow==23.0.1
